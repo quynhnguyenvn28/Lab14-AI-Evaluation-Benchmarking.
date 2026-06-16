@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "version": "v2",
+    "total": 60,
+    "timestamp": "2026-06-16 16:47:02",
+    "duration_seconds": 0.5155,
+    "judge_models": [
+      "coverage_judge",
+      "policy_judge"
+    ]
+  },
+  "metrics": {
+    "avg_score": 4.83,
+    "pass_rate": 1.0,
+    "fail_count": 0,
+    "error_count": 0,
+    "hit_rate": 1.0,
+    "mrr": 0.9896,
+    "faithfulness": 1.0,
+    "relevancy": 0.6802,
+    "agreement_rate": 0.925,
+    "avg_latency_seconds": 0.0717,
+    "total_tokens": 9579,
+    "estimated_cost_usd": 0.002211,
+    "cost_per_case_usd": 3.7e-05
+  },
+  "breakdown_by_type": {
+    "fact-check": {
+      "count": 12,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "scenario": {
+      "count": 12,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "summarization": {
+      "count": 12,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "prompt-injection": {
+      "count": 1,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "goal-hijacking": {
+      "count": 1,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "policy-boundary": {
+      "count": 4,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "negative-case": {
+      "count": 2,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "safety": {
+      "count": 1,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "latency-stress": {
+      "count": 1,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "multi-fact": {
+      "count": 1,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "ambiguous-overlap": {
+      "count": 1,
+      "fails": 0,
+      "avg_score": 5.0,
+      "fail_rate": 0.0
+    },
+    "out-of-context": {
+      "count": 6,
+      "fails": 0,
+      "avg_score": 4.5,
+      "fail_rate": 0.0
+    },
+    "ambiguous": {
+      "count": 6,
+      "fails": 0,
+      "avg_score": 3.8,
+      "fail_rate": 0.0
+    }
+  },
+  "regression": {
+    "decision": "APPROVE",
+    "checks": {
+      "quality_not_regressed": true,
+      "retrieval_not_regressed": true,
+      "minimum_avg_score": true,
+      "minimum_hit_rate": true,
+      "agreement_acceptable": true,
+      "latency_acceptable": true
+    },
+    "delta": {
+      "avg_score": 1.5158,
+      "hit_rate": 0.1875,
+      "avg_latency_seconds": -0.0299,
+      "cost_per_case_usd": -1e-06
+    },
+    "baseline": {
+      "version": "v1",
+      "metrics": {
+        "avg_score": 3.3142,
+        "pass_rate": 0.4833,
+        "fail_count": 31,
+        "error_count": 0,
+        "hit_rate": 0.8125,
+        "mrr": 0.6979,
+        "faithfulness": 0.7215,
+        "relevancy": 0.5601,
+        "agreement_rate": 0.9346,
+        "avg_latency_seconds": 0.1016,
+        "total_tokens": 9635,
+        "estimated_cost_usd": 0.002275,
+        "cost_per_case_usd": 3.8e-05
+      }
+    }
+  }
+}
